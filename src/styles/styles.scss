@@ -1,0 +1,162 @@
+/* styles.scss */
+
+@import 'products'; // Import Products component styles
+@import 'carts'; // Import Cart component styles
+
+body {
+  background-color: #f2f2f2; /* Set a light gray background color */
+  padding: 100px
+}
+
+// App component
+.app-container {
+  font-family: Arial, sans-serif;
+  max-width: 1900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.app-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.app-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.products-container {
+  flex: 2;
+  margin-right: 20px;
+}
+
+.cart-container {
+  flex: 1;
+  margin-left: 20px;
+}
+
+// Products component
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); // Display three columns
+  gap: 20px;
+}
+
+.product-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-details {
+  padding: 16px;
+}
+
+.product-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.product-price {
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.add-to-cart-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #0056b3;
+}
+
+// Cart component
+.cart {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.cart-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.empty-cart-msg {
+  color: #666;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.cart-item-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.cart-item-details {
+  flex: 1;
+}
+
+.cart-item-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.cart-item-price {
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+}
+
+.decrement-btn,
+.increment-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.quantity {
+  margin: 0 8px;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+.total {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
